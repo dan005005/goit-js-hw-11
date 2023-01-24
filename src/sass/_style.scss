@@ -1,0 +1,163 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+background: #A770EF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FDB99B, #CF8BF3, #A770EF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // https: //uigradients.com/#Atlas
+scroll-behavior: smooth;
+}
+.search-form{
+   padding-top: 30px;
+   margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    
+     
+
+}
+
+.search-input{
+margin-right: 5px; 
+height: 30px;   
+font-size: 15px;
+line-height: 1.1;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+background-color: beige;
+border-color: transparent;
+border-width: 2px;
+}
+.search-input:hover,
+.search-input:focus{
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.search-btn{
+height: 30px;
+font-size: 18px;
+line-height: 1.2;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+border-color: transparent;
+background-color: rgb(140, 226, 133);
+
+}
+.search-btn:hover,
+.search-btn:focus{ 
+    color: #ffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%vp;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+
+}
+.photo-card{
+    flex-basis: calc((100% - 60px) / 4);
+    background-color: beige;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.photo-card:hover,
+.photo-card:focus{
+    background-color: white;
+}
+ .preview-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 250ms linear;
+ }
+.preview-image:hover,
+.preview-image:focus{
+    transform: scale(1.1);
+}
+
+ .info{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+ }
+ .info-item{
+    font-size: 15px;
+    
+ }
+
+ .load-more{
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgb(140, 226, 133);
+ }
+
+ .load-more:hover,
+ .load-more:focus {
+     border-color: gray;
+     color: #ffff;
+     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+ }
+
+ .visually-hidden {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+ }
+
+ .scrollup {
+     position: fixed;
+     right: 20px;
+     bottom: 50px;
+     width: 50px;
+     height: 50px;
+     background-color: rgba(77, 71, 59, 0.371);
+     border-radius: 50%;
+     outline: none;
+     z-index: 999999;
+    
+ }
+  .scrollup:hover{
+transform: scale(1.3);
+background-color: rgba(42, 185, 42, 0.352)
+
+  }
+ .scrollup::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 20px;
+     height: 20px;
+     transform: translate(-50%, -30%) rotate(45deg);
+     border-top: 5px solid white;
+     border-left: 5px solid white;
+ }
